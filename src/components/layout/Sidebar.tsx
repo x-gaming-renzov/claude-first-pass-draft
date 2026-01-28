@@ -3,16 +3,11 @@ import { cn } from '@/lib/utils';
 import {
   LayoutDashboard,
   Users,
-  FlaskConical,
   Settings,
   TrendingUp,
   Bug,
   HeartPulse,
-  Trophy,
-  FileCheck,
   BarChart3,
-  Megaphone,
-  Palette,
   UserCog,
   Building2,
 } from 'lucide-react';
@@ -31,11 +26,9 @@ interface NavItem {
 
 const roleNavItems: Record<UserRole, NavItem[]> = {
   'super-admin': [
-    { label: 'Overview', href: '/super-admin', icon: LayoutDashboard },
-    { label: 'All Stakeholders', href: '/super-admin/stakeholders', icon: Building2 },
-    { label: 'Experiments', href: '/super-admin/experiments', icon: FlaskConical },
-    { label: 'User Management', href: '/super-admin/users', icon: UserCog },
-    { label: 'Settings', href: '/super-admin/settings', icon: Settings },
+    { label: 'Insights', href: '/super-admin', icon: LayoutDashboard },
+    { label: 'Users & Actions', href: '/super-admin/users', icon: UserCog },
+    { label: 'Settings', href: '/super-admin/config', icon: Settings },
   ],
   'business': [
     { label: 'Overview', href: '/project-team/business', icon: LayoutDashboard },
@@ -53,27 +46,16 @@ const roleNavItems: Record<UserRole, NavItem[]> = {
     { label: 'All Dashboards', href: '/project-team/support/all', icon: Building2 },
   ],
   'kie': [
-    { label: 'Overview', href: '/kie', icon: LayoutDashboard },
-    { label: 'Applications', href: '/kie/applications', icon: FileCheck },
-    { label: 'Tournaments', href: '/kie/tournaments', icon: Trophy },
-    { label: 'Trends', href: '/kie/trends', icon: TrendingUp },
+    { label: 'Insights', href: '/kie', icon: BarChart3 },
+    { label: 'Actions', href: '/kie/actions', icon: LayoutDashboard },
   ],
   'organiser': [
-    { label: 'Overview', href: '/organiser', icon: LayoutDashboard },
-    { label: 'Tournaments', href: '/organiser/tournaments', icon: Trophy },
-    { label: 'Analytics', href: '/organiser/analytics', icon: BarChart3 },
-    { label: 'Impressions', href: '/organiser/impressions', icon: Megaphone },
+    { label: 'Insights', href: '/organiser', icon: BarChart3 },
+    { label: 'Actions', href: '/organiser/actions', icon: LayoutDashboard },
+    { label: 'Settings', href: '/organiser/settings', icon: Settings },
   ],
 };
 
-const roleLabels: Record<UserRole, string> = {
-  'super-admin': 'Super Admin',
-  'business': 'Business Team',
-  'development': 'Development Team',
-  'support': 'Support Admin',
-  'kie': 'KIE Team',
-  'organiser': 'Organiser',
-};
 
 export function Sidebar({ role }: SidebarProps) {
   const location = useLocation();
@@ -84,20 +66,11 @@ export function Sidebar({ role }: SidebarProps) {
       <div className="flex h-full flex-col">
         {/* Logo */}
         <div className="flex h-16 items-center border-b px-6">
-          <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-              <Palette className="h-5 w-5 text-primary-foreground" />
-            </div>
-            <span className="text-lg font-semibold">X-Gaming</span>
-          </div>
-        </div>
-
-        {/* Role Badge */}
-        <div className="border-b px-4 py-3">
-          <div className="rounded-md bg-secondary px-3 py-2">
-            <p className="text-xs text-muted-foreground">Current Role</p>
-            <p className="font-medium text-sm">{roleLabels[role]}</p>
-          </div>
+          <img
+            src="/Battlin-Xgaming.png"
+            alt="Powered by X Gaming"
+            className="h-8 w-auto"
+          />
         </div>
 
         {/* Navigation */}

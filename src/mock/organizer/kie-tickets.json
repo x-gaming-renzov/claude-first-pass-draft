@@ -1,0 +1,72 @@
+[
+  {
+    "id": "KIE-001",
+    "subject": "Request tournament feature on homepage",
+    "category": "promotion",
+    "priority": "medium",
+    "status": "pending",
+    "tournamentId": "tourn_002",
+    "tournamentName": "Free Fire Pro League S3",
+    "created": "2026-01-25T10:00:00Z",
+    "lastUpdated": "2026-01-25T10:00:00Z",
+    "description": "Requesting to feature our tournament on the platform homepage. Prize pool is Rs. 75,000 and we expect 1000+ viewers.",
+    "attachments": ["tournament_banner.png", "sponsorship_proof.pdf"],
+    "response": null
+  },
+  {
+    "id": "KIE-002",
+    "subject": "Cheating accusation escalation",
+    "category": "escalation",
+    "priority": "critical",
+    "status": "in-review",
+    "tournamentId": "tourn_001",
+    "tournamentName": "BGMI Weekend Warriors Cup",
+    "created": "2026-01-27T16:00:00Z",
+    "lastUpdated": "2026-01-27T17:00:00Z",
+    "description": "Multiple teams have reported Team 'HackMasters' for using cheats. I have reviewed the gameplay footage and it looks suspicious. Need KIE team to review and take action.",
+    "attachments": ["gameplay_evidence.mp4", "player_reports.pdf"],
+    "response": "Under review. KIE team is analyzing the footage."
+  },
+  {
+    "id": "KIE-003",
+    "subject": "Prize pool increase approval",
+    "category": "approval",
+    "priority": "low",
+    "status": "approved",
+    "tournamentId": "tourn_003",
+    "tournamentName": "COD Mobile Championship",
+    "created": "2026-01-20T09:00:00Z",
+    "lastUpdated": "2026-01-22T14:00:00Z",
+    "description": "We have received additional sponsorship and want to increase prize pool from Rs. 100,000 to Rs. 150,000.",
+    "attachments": ["sponsor_agreement.pdf"],
+    "response": "Approved. Please update tournament details."
+  },
+  {
+    "id": "KIE-004",
+    "subject": "Tournament extension request",
+    "category": "schedule",
+    "priority": "medium",
+    "status": "rejected",
+    "tournamentId": "tourn_001",
+    "tournamentName": "BGMI Weekend Warriors Cup",
+    "created": "2026-01-26T11:00:00Z",
+    "lastUpdated": "2026-01-26T16:00:00Z",
+    "description": "Due to server issues, we need to extend the tournament by 1 day. Requesting approval to change end date from Jan 30 to Jan 31.",
+    "attachments": [],
+    "response": "Rejected. Server issues were minor and resolved. Please complete within original timeline."
+  },
+  {
+    "id": "KIE-005",
+    "subject": "Refund processing support",
+    "category": "support",
+    "priority": "high",
+    "status": "pending",
+    "tournamentId": "tourn_006",
+    "tournamentName": "Mobile Legends Weekly",
+    "created": "2026-01-21T14:00:00Z",
+    "lastUpdated": "2026-01-21T14:00:00Z",
+    "description": "Tournament was cancelled due to low registrations. Need help processing refunds for 12 registered teams. Total amount: Rs. 1,200.",
+    "attachments": ["registration_list.xlsx"],
+    "response": null
+  }
+]

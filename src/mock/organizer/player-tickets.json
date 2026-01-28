@@ -1,0 +1,270 @@
+[
+  {
+    "id": "TKT-P001",
+    "subject": "Wrong match results recorded",
+    "category": "match-dispute",
+    "priority": "critical",
+    "status": "open",
+    "tournamentId": "tourn_001",
+    "tournamentName": "BGMI Weekend Warriors Cup",
+    "from": "Team Phoenix",
+    "playerName": "Arjun_Pro",
+    "playerEmail": "arjun@email.com",
+    "created": "2026-01-27T14:15:00Z",
+    "lastUpdated": "2026-01-27T14:15:00Z",
+    "messages": [
+      {
+        "from": "player",
+        "sender": "Arjun_Pro",
+        "text": "Our team scored 15 kills in Round 3 but only 10 were recorded. We have video proof.",
+        "time": "2026-01-27T14:15:00Z"
+      }
+    ]
+  },
+  {
+    "id": "TKT-P002",
+    "subject": "Payment not reflecting",
+    "category": "payment",
+    "priority": "high",
+    "status": "open",
+    "tournamentId": "tourn_001",
+    "tournamentName": "BGMI Weekend Warriors Cup",
+    "from": "Noob Slayers",
+    "playerName": "NoobMaster69",
+    "playerEmail": "noob@email.com",
+    "created": "2026-01-27T11:30:00Z",
+    "lastUpdated": "2026-01-27T12:00:00Z",
+    "messages": [
+      {
+        "from": "player",
+        "sender": "NoobMaster69",
+        "text": "I paid the entry fee 2 hours ago but status still shows pending. Transaction ID: TXN123456",
+        "time": "2026-01-27T11:30:00Z"
+      },
+      {
+        "from": "organizer",
+        "sender": "Support",
+        "text": "Thank you for reporting. We are checking with our payment gateway. Will update within 2 hours.",
+        "time": "2026-01-27T12:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "TKT-P003",
+    "subject": "Schedule conflict request",
+    "category": "schedule",
+    "priority": "medium",
+    "status": "in-progress",
+    "tournamentId": "tourn_002",
+    "tournamentName": "Free Fire Pro League S3",
+    "from": "Victory Royale",
+    "playerName": "VictoryKing",
+    "playerEmail": "victory@email.com",
+    "created": "2026-01-26T09:00:00Z",
+    "lastUpdated": "2026-01-27T10:00:00Z",
+    "messages": [
+      {
+        "from": "player",
+        "sender": "VictoryKing",
+        "text": "Our team has exams on Feb 5th. Can our first match be rescheduled to Feb 6th?",
+        "time": "2026-01-26T09:00:00Z"
+      },
+      {
+        "from": "organizer",
+        "sender": "Support",
+        "text": "We understand. Let us check with the tournament schedule and get back to you.",
+        "time": "2026-01-26T14:00:00Z"
+      },
+      {
+        "from": "player",
+        "sender": "VictoryKing",
+        "text": "Any update on this?",
+        "time": "2026-01-27T10:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "TKT-P004",
+    "subject": "Team member replacement",
+    "category": "roster-change",
+    "priority": "medium",
+    "status": "open",
+    "tournamentId": "tourn_001",
+    "tournamentName": "BGMI Weekend Warriors Cup",
+    "from": "Dragon Warriors",
+    "playerName": "DragonKing99",
+    "playerEmail": "dragon@email.com",
+    "created": "2026-01-27T08:00:00Z",
+    "lastUpdated": "2026-01-27T08:00:00Z",
+    "messages": [
+      {
+        "from": "player",
+        "sender": "DragonKing99",
+        "text": "One of our players (DragonSlayer) got sick. Can we substitute with DragonRider (UID: 12345678)?",
+        "time": "2026-01-27T08:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "TKT-P005",
+    "subject": "Refund request - cannot participate",
+    "category": "refund",
+    "priority": "low",
+    "status": "resolved",
+    "tournamentId": "tourn_003",
+    "tournamentName": "COD Mobile Championship",
+    "from": "Solo Player",
+    "playerName": "LoneWolf",
+    "playerEmail": "lonewolf@email.com",
+    "created": "2026-01-25T16:00:00Z",
+    "lastUpdated": "2026-01-26T10:00:00Z",
+    "messages": [
+      {
+        "from": "player",
+        "sender": "LoneWolf",
+        "text": "I registered but my team disbanded. Please refund my entry fee.",
+        "time": "2026-01-25T16:00:00Z"
+      },
+      {
+        "from": "organizer",
+        "sender": "Support",
+        "text": "We understand. Since registration is still open, we have processed your refund. Amount will reflect in 3-5 business days.",
+        "time": "2026-01-26T10:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "TKT-P006",
+    "subject": "Cheating report against opponent",
+    "category": "report",
+    "priority": "critical",
+    "status": "open",
+    "tournamentId": "tourn_001",
+    "tournamentName": "BGMI Weekend Warriors Cup",
+    "from": "Elite Squad",
+    "playerName": "EliteGamer",
+    "playerEmail": "elite@email.com",
+    "created": "2026-01-27T15:30:00Z",
+    "lastUpdated": "2026-01-27T15:30:00Z",
+    "messages": [
+      {
+        "from": "player",
+        "sender": "EliteGamer",
+        "text": "Team 'ShadowX' is using wallhacks. Check their gameplay at timestamp 12:34 in Round 2. Clear evidence of seeing through walls.",
+        "time": "2026-01-27T15:30:00Z"
+      }
+    ]
+  },
+  {
+    "id": "TKT-P007",
+    "subject": "Stream delay issue",
+    "category": "technical",
+    "priority": "low",
+    "status": "resolved",
+    "tournamentId": "tourn_004",
+    "tournamentName": "BGMI Duo Showdown",
+    "from": "Thunder Strike",
+    "playerName": "ThunderBolt",
+    "playerEmail": "thunder@email.com",
+    "created": "2026-01-16T20:00:00Z",
+    "lastUpdated": "2026-01-17T09:00:00Z",
+    "messages": [
+      {
+        "from": "player",
+        "sender": "ThunderBolt",
+        "text": "The stream delay was only 30 seconds. Other teams could see our positions!",
+        "time": "2026-01-16T20:00:00Z"
+      },
+      {
+        "from": "organizer",
+        "sender": "Support",
+        "text": "Thank you for the feedback. We have noted this for future tournaments and will ensure minimum 2-minute delay.",
+        "time": "2026-01-17T09:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "TKT-P008",
+    "subject": "Prize money not received",
+    "category": "payment",
+    "priority": "high",
+    "status": "in-progress",
+    "tournamentId": "tourn_004",
+    "tournamentName": "BGMI Duo Showdown",
+    "from": "Shadow Assassins",
+    "playerName": "ShadowX",
+    "playerEmail": "shadow@email.com",
+    "created": "2026-01-20T10:00:00Z",
+    "lastUpdated": "2026-01-25T14:00:00Z",
+    "messages": [
+      {
+        "from": "player",
+        "sender": "ShadowX",
+        "text": "We won 2nd place but haven't received our prize money yet. Tournament ended 3 days ago.",
+        "time": "2026-01-20T10:00:00Z"
+      },
+      {
+        "from": "organizer",
+        "sender": "Support",
+        "text": "Prize distribution takes 7 business days. Please share your bank details for transfer.",
+        "time": "2026-01-21T11:00:00Z"
+      },
+      {
+        "from": "player",
+        "sender": "ShadowX",
+        "text": "Bank details shared. When can we expect the transfer?",
+        "time": "2026-01-25T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "TKT-P009",
+    "subject": "Room ID not received",
+    "category": "technical",
+    "priority": "high",
+    "status": "open",
+    "tournamentId": "tourn_001",
+    "tournamentName": "BGMI Weekend Warriors Cup",
+    "from": "Combat Kings",
+    "playerName": "CombatKing",
+    "playerEmail": "combat@email.com",
+    "created": "2026-01-27T17:45:00Z",
+    "lastUpdated": "2026-01-27T17:45:00Z",
+    "messages": [
+      {
+        "from": "player",
+        "sender": "CombatKing",
+        "text": "Match starts in 15 minutes but we haven't received the room ID yet!",
+        "time": "2026-01-27T17:45:00Z"
+      }
+    ]
+  },
+  {
+    "id": "TKT-P010",
+    "subject": "Query about tournament format",
+    "category": "general",
+    "priority": "low",
+    "status": "resolved",
+    "tournamentId": "tourn_002",
+    "tournamentName": "Free Fire Pro League S3",
+    "from": "Blazing Wolves",
+    "playerName": "WolfAlpha",
+    "playerEmail": "wolf@email.com",
+    "created": "2026-01-24T11:00:00Z",
+    "lastUpdated": "2026-01-24T15:00:00Z",
+    "messages": [
+      {
+        "from": "player",
+        "sender": "WolfAlpha",
+        "text": "Is this a single elimination or double elimination format?",
+        "time": "2026-01-24T11:00:00Z"
+      },
+      {
+        "from": "organizer",
+        "sender": "Support",
+        "text": "This is a points-based format with 3 rounds. Top 16 teams qualify for finals. Check tournament rules page for details.",
+        "time": "2026-01-24T15:00:00Z"
+      }
+    ]
+  }
+]
