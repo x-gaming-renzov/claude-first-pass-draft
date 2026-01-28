@@ -52,10 +52,7 @@ const tournamentTrend = [
 
 const registrationData = [
   { game: 'BGMI', registrations: 12450, participants: 11200 },
-  { game: 'Free Fire', registrations: 8920, participants: 8100 },
-  { game: 'COD Mobile', registrations: 5630, participants: 5200 },
-  { game: 'Valorant', registrations: 3840, participants: 3600 },
-  { game: 'PUBG PC', registrations: 2150, participants: 1980 },
+  { game: 'PUBG', registrations: 8920, participants: 8100 },
 ];
 
 const matchData = [
