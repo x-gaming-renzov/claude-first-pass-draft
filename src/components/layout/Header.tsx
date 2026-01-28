@@ -20,26 +20,22 @@ import {
 import type { UserRole } from '@/types';
 
 interface HeaderProps {
-  title: string;
   role: UserRole;
   onRoleChange: (role: UserRole) => void;
 }
 
 const roles: { value: UserRole; label: string }[] = [
   { value: 'super-admin', label: 'Super Admin' },
+  { value: 'kie', label: 'KIE Team' },
+  { value: 'organiser', label: 'Organisers' },
   { value: 'business', label: 'Business Team' },
   { value: 'development', label: 'Development Team' },
   { value: 'support', label: 'Support Admin' },
-  { value: 'kie', label: 'KIE Team' },
-  { value: 'organiser', label: 'Organiser' },
 ];
 
-export function Header({ title, role, onRoleChange }: HeaderProps) {
+export function Header({ role, onRoleChange }: HeaderProps) {
   return (
-    <header className="sticky top-0 z-30 flex h-16 items-center justify-between border-b bg-background/95 px-6 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="flex items-center gap-4">
-        <h1 className="text-xl font-semibold">{title}</h1>
-      </div>
+    <header className="sticky top-0 z-30 flex h-16 items-center justify-end border-b bg-background/95 px-6 backdrop-blur supports-[backdrop-filter]:bg-background/60">
 
       <div className="flex items-center gap-4">
         {/* Search */}

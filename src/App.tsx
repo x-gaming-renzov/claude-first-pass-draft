@@ -3,33 +3,15 @@ import { BrowserRouter, Routes, Route, Navigate, useNavigate, useLocation } from
 import { DashboardLayout } from '@/components/layout/DashboardLayout';
 import type { UserRole } from '@/types';
 
-// Super Admin Pages
-import { SuperAdminOverview } from '@/pages/super-admin/Overview';
-import { Experiments } from '@/pages/super-admin/Experiments';
-import { Stakeholders } from '@/pages/super-admin/Stakeholders';
-import { UserManagement } from '@/pages/super-admin/UserManagement';
+// New Consolidated Dashboard Pages
+import { SuperAdminDashboard } from '@/pages/super-admin/SuperAdminDashboard';
+import { KIEDashboard } from '@/pages/kie/KIEDashboard';
+import { OrganiserDashboard } from '@/pages/organiser/OrganiserDashboard';
 
-// Project Team Pages
+// Project Team Pages (keeping for backwards compatibility)
 import { BusinessOverview } from '@/pages/project-team/BusinessOverview';
 import { DevelopmentOverview } from '@/pages/project-team/DevelopmentOverview';
 import { SupportOverview } from '@/pages/project-team/SupportOverview';
-
-// KIE Pages
-import { KIEOverview } from '@/pages/kie/KIEOverview';
-import { Applications } from '@/pages/kie/Applications';
-
-// Organiser Pages
-import { OrganiserOverview } from '@/pages/organiser/OrganiserOverview';
-import { TournamentAnalytics } from '@/pages/organiser/TournamentAnalytics';
-
-const roleTitles: Record<UserRole, string> = {
-  'super-admin': 'Super Admin Dashboard',
-  'business': 'Business Dashboard',
-  'development': 'Development Dashboard',
-  'support': 'Support Dashboard',
-  'kie': 'KIE Dashboard',
-  'organiser': 'Organiser Dashboard',
-};
 
 const roleDefaultPaths: Record<UserRole, string> = {
   'super-admin': '/super-admin',
@@ -50,18 +32,6 @@ function AppContent() {
     navigate(roleDefaultPaths[newRole]);
   };
 
-  // Determine title based on current path
-  const getTitle = () => {
-    const path = location.pathname;
-    if (path.startsWith('/super-admin')) return roleTitles['super-admin'];
-    if (path.startsWith('/project-team/business')) return roleTitles['business'];
-    if (path.startsWith('/project-team/development')) return roleTitles['development'];
-    if (path.startsWith('/project-team/support')) return roleTitles['support'];
-    if (path.startsWith('/kie')) return roleTitles['kie'];
-    if (path.startsWith('/organiser')) return roleTitles['organiser'];
-    return 'Dashboard';
-  };
-
   // Sync role with path on mount
   useEffect(() => {
     const path = location.pathname;
@@ -77,15 +47,13 @@ function AppContent() {
     <Routes>
       <Route path="/" element={<Navigate to="/super-admin" replace />} />
 
-      {/* Super Admin Routes */}
-      <Route element={<DashboardLayout role={role} title={getTitle()} onRoleChange={handleRoleChange} />}>
-        <Route path="/super-admin" element={<SuperAdminOverview />} />
-        <Route path="/super-admin/experiments" element={<Experiments />} />
-        <Route path="/super-admin/stakeholders" element={<Stakeholders />} />
-        <Route path="/super-admin/users" element={<UserManagement />} />
-        <Route path="/super-admin/settings" element={<div className="p-4">Settings Page - Coming Soon</div>} />
+      {/* All routes under DashboardLayout */}
+      <Route element={<DashboardLayout role={role} onRoleChange={handleRoleChange} />}>
+        {/* Super Admin Routes - New consolidated 5-tab dashboard */}
+        <Route path="/super-admin" element={<SuperAdminDashboard />} />
+        <Route path="/super-admin/:tab" element={<SuperAdminDashboard />} />
 
-        {/* Project Team Routes */}
+        {/* Project Team Routes (keeping for backwards compatibility) */}
         <Route path="/project-team/business" element={<BusinessOverview />} />
         <Route path="/project-team/business/acquisition" element={<BusinessOverview />} />
         <Route path="/project-team/business/retention" element={<BusinessOverview />} />
@@ -96,17 +64,13 @@ function AppContent() {
         <Route path="/project-team/support" element={<SupportOverview />} />
         <Route path="/project-team/support/all" element={<SupportOverview />} />
 
-        {/* KIE Routes */}
-        <Route path="/kie" element={<KIEOverview />} />
-        <Route path="/kie/applications" element={<Applications />} />
-        <Route path="/kie/tournaments" element={<KIEOverview />} />
-        <Route path="/kie/trends" element={<KIEOverview />} />
+        {/* KIE Routes - New consolidated 6-tab dashboard */}
+        <Route path="/kie" element={<KIEDashboard />} />
+        <Route path="/kie/:tab" element={<KIEDashboard />} />
 
-        {/* Organiser Routes */}
-        <Route path="/organiser" element={<OrganiserOverview />} />
-        <Route path="/organiser/tournaments" element={<OrganiserOverview />} />
-        <Route path="/organiser/analytics" element={<TournamentAnalytics />} />
-        <Route path="/organiser/impressions" element={<TournamentAnalytics />} />
+        {/* Organiser Routes - New consolidated 6-tab dashboard */}
+        <Route path="/organiser" element={<OrganiserDashboard />} />
+        <Route path="/organiser/:tab" element={<OrganiserDashboard />} />
       </Route>
     </Routes>
   );

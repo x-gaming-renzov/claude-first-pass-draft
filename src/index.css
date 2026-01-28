@@ -1,30 +1,63 @@
 @import "tailwindcss";
 
 @theme {
+  /* Light mode with violet accent - clean white background */
+
+  /* Base colors - white background */
   --color-background: hsl(0 0% 100%);
-  --color-foreground: hsl(222.2 84% 4.9%);
+  --color-foreground: hsl(224 71% 4%);
+
+  /* Card colors - subtle gray cards */
   --color-card: hsl(0 0% 100%);
-  --color-card-foreground: hsl(222.2 84% 4.9%);
+  --color-card-foreground: hsl(224 71% 4%);
+
+  /* Popover colors */
   --color-popover: hsl(0 0% 100%);
-  --color-popover-foreground: hsl(222.2 84% 4.9%);
-  --color-primary: hsl(222.2 47.4% 11.2%);
-  --color-primary-foreground: hsl(210 40% 98%);
-  --color-secondary: hsl(210 40% 96.1%);
-  --color-secondary-foreground: hsl(222.2 47.4% 11.2%);
-  --color-muted: hsl(210 40% 96.1%);
-  --color-muted-foreground: hsl(215.4 16.3% 46.9%);
-  --color-accent: hsl(210 40% 96.1%);
-  --color-accent-foreground: hsl(222.2 47.4% 11.2%);
-  --color-destructive: hsl(0 84.2% 60.2%);
-  --color-destructive-foreground: hsl(210 40% 98%);
-  --color-border: hsl(214.3 31.8% 91.4%);
-  --color-input: hsl(214.3 31.8% 91.4%);
-  --color-ring: hsl(222.2 84% 4.9%);
-  --color-chart-1: hsl(12 76% 61%);
-  --color-chart-2: hsl(173 58% 39%);
-  --color-chart-3: hsl(197 37% 24%);
-  --color-chart-4: hsl(43 74% 66%);
-  --color-chart-5: hsl(27 87% 67%);
+  --color-popover-foreground: hsl(224 71% 4%);
+
+  /* Primary - Violet */
+  --color-primary: hsl(263 70% 50%);
+  --color-primary-foreground: hsl(0 0% 100%);
+
+  /* Secondary - Light gray */
+  --color-secondary: hsl(220 14% 96%);
+  --color-secondary-foreground: hsl(224 71% 4%);
+
+  /* Muted */
+  --color-muted: hsl(220 14% 96%);
+  --color-muted-foreground: hsl(220 9% 46%);
+
+  /* Accent - Violet */
+  --color-accent: hsl(263 70% 50%);
+  --color-accent-foreground: hsl(0 0% 100%);
+
+  /* Destructive */
+  --color-destructive: hsl(0 84% 60%);
+  --color-destructive-foreground: hsl(0 0% 100%);
+
+  /* Border and input */
+  --color-border: hsl(220 13% 91%);
+  --color-input: hsl(220 13% 91%);
+  --color-ring: hsl(263 70% 50%);
+
+  /* Chart colors - violet palette */
+  --color-chart-1: hsl(263 70% 50%);
+  --color-chart-2: hsl(280 65% 55%);
+  --color-chart-3: hsl(250 70% 55%);
+  --color-chart-4: hsl(300 55% 45%);
+  --color-chart-5: hsl(320 60% 50%);
+
+  /* Sidebar specific colors - light sidebar */
+  --color-sidebar: hsl(220 14% 98%);
+  --color-sidebar-foreground: hsl(224 71% 4%);
+  --color-sidebar-primary: hsl(263 70% 50%);
+  --color-sidebar-primary-foreground: hsl(0 0% 100%);
+  --color-sidebar-accent: hsl(220 14% 96%);
+  --color-sidebar-accent-foreground: hsl(224 71% 4%);
+  --color-sidebar-border: hsl(220 13% 91%);
+  --color-sidebar-ring: hsl(263 70% 50%);
+
+  /* Border radius */
   --radius: 0.5rem;
 }
 
@@ -36,4 +69,23 @@ body {
   background-color: var(--color-background);
   color: var(--color-foreground);
   font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+/* Custom scrollbar for light theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(220 14% 96%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(220 9% 76%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(220 9% 66%);
 }
