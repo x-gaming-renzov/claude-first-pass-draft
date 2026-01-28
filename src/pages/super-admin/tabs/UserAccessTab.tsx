@@ -460,7 +460,7 @@ export function UserAccessTab() {
                           </Badge>
                         </td>
                         <td className="py-3 px-4 text-muted-foreground">{user.team}</td>
-                        <td className="py-3 px-4">{getStatusBadge(user.status)}</td>
+                        <td className="py-3 px-4">{getStatusBadge(user.status || 'active')}</td>
                         <td className="py-3 px-4 text-muted-foreground">{user.lastActive}</td>
                         <td className="py-3 px-4 text-right">
                           <DropdownMenu>

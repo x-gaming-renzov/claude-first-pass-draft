@@ -12,13 +12,15 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { experiments } from '@/data/mock-data';
-import type { Experiment } from '@/types';
 
-const statusColors: Record<Experiment['status'], 'default' | 'secondary' | 'warning' | 'success'> = {
+const statusColors: Record<string, 'default' | 'secondary' | 'warning' | 'success'> = {
   draft: 'secondary',
   running: 'success',
   paused: 'warning',
   completed: 'default',
+  analyzing: 'warning',
+  pending: 'secondary',
+  active: 'success',
 };
 
 export function Experiments() {
@@ -166,7 +168,7 @@ export function Experiments() {
 
                     {/* Variants */}
                     <div className="grid gap-3 md:grid-cols-2">
-                      {experiment.variants.map((variant) => (
+                      {experiment.variants?.map((variant) => (
                         <div
                           key={variant.id}
                           className="rounded-lg border p-3 space-y-2"

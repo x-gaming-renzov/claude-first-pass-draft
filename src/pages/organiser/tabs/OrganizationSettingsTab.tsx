@@ -107,7 +107,7 @@ export function OrganizationSettingsTab() {
                   <label className="text-sm font-medium">Description</label>
                   <Textarea
                     value={orgSettings.description}
-                    onChange={(e) => setOrgSettings({ ...orgSettings, description: e.target.value })}
+                    onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setOrgSettings({ ...orgSettings, description: e.target.value })}
                     className="mt-1 min-h-[100px]"
                   />
                 </div>
