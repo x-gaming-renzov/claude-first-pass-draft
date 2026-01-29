@@ -148,6 +148,7 @@ export const users: User[] = [
   { id: '1', name: 'James', email: 'james@krafton.com', role: 'super-admin', team: 'Krafton', lastActive: '2 hours ago', status: 'active' },
   { id: '2', name: 'Michael', email: 'michael@krafton.com', role: 'super-admin', team: 'Krafton', lastActive: '1 hour ago', status: 'active' },
   { id: '3', name: 'Jin', email: 'jin@krafton.com', role: 'super-admin', team: 'Krafton', lastActive: '30 mins ago', status: 'active' },
+  { id: '15', name: 'Jake', email: 'jinkuk.kim@krafton.com', role: 'super-admin', team: 'Krafton', lastActive: 'Just now', status: 'active' },
   // Business (3)
   { id: '4', name: 'Prashant Pandey', email: 'prashant@krafton.com', role: 'business', team: 'Business', lastActive: '3 hours ago', status: 'active' },
   { id: '5', name: 'Dharni', email: 'dharni@krafton.com', role: 'business', team: 'Business', lastActive: '1 day ago', status: 'active' },
